@@ -1,6 +1,8 @@
 WordPress Email TLD Checker
 ===========================
 
+[![Build Status](https://travis-ci.com/boxuk/wordpress-email-tld-checker.svg?token=3rRfYiN6sMupp1z6RpzN&branch=master)](https://travis-ci.com/boxuk/wordpress-email-tld-checker)
+
 A small WordPress plugin to validate email addresses against valid TLDs.
 
 [https://github.com/BoxUk/wordpress-email-tld-checker](https://github.com/BoxUk/wordpress-email-tld-checker)
