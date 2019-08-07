@@ -15,7 +15,11 @@ declare( strict_types=1 );
 
 namespace BoxUk\Plugins\WordPress_Email_Tld_Checker;
 
-require_once __DIR__ . '/vendor/autoload.php';
+// Include composer autoloader from this plugin dir if it exists, otherwise assume the autoloader is already included.
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	require_once __DIR__ . '/vendor/autoload.php';
+}
+
 require_once __DIR__ . '/functions.php';
 
 add_filter( 'is_email', __NAMESPACE__ . '\\email_ends_with_tld', 10, 3 );
