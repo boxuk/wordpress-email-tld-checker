@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - 7.2
+
+branches:
+  only:
+    - master
+
+before_script:
+  - composer install
+
+script:
+  - vendor/bin/phpcs . --severity=1
+  - vendor/bin/phpunit
