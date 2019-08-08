@@ -1,11 +1,13 @@
 {
     "name": "boxuk/wordpress-email-tld-checker",
     "description": "A small WordPress plugin to validate email addresses against valid TLDs.",
+    "keywords"   : ["wordpress", "email"],
     "type": "wordpress-plugin",
     "require": {
         "php": "^7.2",
         "symfony/polyfill-intl-idn": "^1.12",
-        "arubacao/tld-checker": "^1.2"
+        "arubacao/tld-checker": "^1.2",
+        "composer/installers": "^1.6"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.3",
