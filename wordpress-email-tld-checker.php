@@ -20,6 +20,8 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	require_once __DIR__ . '/vendor/autoload.php';
 }
 
-require_once __DIR__ . '/functions.php';
+if ( ! function_exists( 'BoxUk\Plugins\WordPress_Email_Tld_Checker\email_ends_with_tld' ) ) {
+	throw new \RuntimeException( 'WordPress Email TLD Checker not installed! Please install with Composer and ensure you are using the autoloader.' );
+}
 
 add_filter( 'is_email', __NAMESPACE__ . '\\email_ends_with_tld', 10, 3 );

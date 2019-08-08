@@ -33,3 +33,14 @@ Usage
 -----
 
 Once the plugin is activated, an email validation (`is_email()`) will now check that the TLD (the .com bit for example) is valid according to [the official IANA database](https://www.iana.org/domains/root/db).
+
+Troubleshooting
+---------------
+
+The plugin is designed to be installed with [Composer](http://getcomposer.org) and assumes you are including somewhere the autoloader that comes with composer, if you're not then you may run into some issues. The easiest way to resolve is to include the `autolaod.php` from composer, but failing that you may be able to manually require the following files:
+
+* `$vendor_dir . '/symfony/polyfill-intl-idn/Idn.php'`
+* `$vendor_dir . '/symfony/polyfill-intl-idn/bootstrap.php'`
+* `$vendor_dir . '/arubacao/tld-checker/src/RootZoneDatabase.php'`
+* `$vendor_dir . '/arubacao/tld-checker/src/Validator.php'`
+* `$this_plugin_dir . '/functions.php`
