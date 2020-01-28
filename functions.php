@@ -29,7 +29,7 @@ function email_ends_with_tld( $is_email, string $email, ?string $context ) {
 	}
 
 	// Only proceed if the intl extension is installed.
-	if ( ! function_exists( 'idn_to_ascii' ) ) {
+	if ( ! \function_exists( 'idn_to_ascii' ) ) {
 		return $is_email;
 	}
 
