@@ -13,6 +13,12 @@
     <arg name="parallel" value="8"/> <!-- Enables parallel processing when available for faster results -->
     <arg name="extensions" value="php,js"/> <!-- Limit to PHP and JS files -->
 
-    <rule ref="WordPress-VIP-Go" />
+    <rule ref="WordPress-VIP-Go">
+        <!--
+        Temporarily exclude this deprecated rule until https://github.com/Automattic/VIP-Coding-Standards/issues/457
+        is addressed
+        -->
+        <exclude name="WordPress.WP.TimezoneChange" />
+    </rule>
     <rule ref="NeutronStandard" />
 </ruleset>
