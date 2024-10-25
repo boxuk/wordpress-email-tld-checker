@@ -1,8 +1,6 @@
 WordPress Email TLD Checker
 ===========================
 
-[![Build Status](https://travis-ci.com/boxuk/wordpress-email-tld-checker.svg?token=3rRfYiN6sMupp1z6RpzN&branch=master)](https://travis-ci.com/boxuk/wordpress-email-tld-checker)
-
 A small WordPress plugin to validate email addresses against valid TLDs.
 
 [https://github.com/BoxUk/wordpress-email-tld-checker](https://github.com/BoxUk/wordpress-email-tld-checker)
@@ -43,4 +41,15 @@ The plugin is designed to be installed with [Composer](http://getcomposer.org) a
 * `$vendor_dir . '/symfony/polyfill-intl-idn/bootstrap.php'`
 * `$vendor_dir . '/arubacao/tld-checker/src/RootZoneDatabase.php'`
 * `$vendor_dir . '/arubacao/tld-checker/src/Validator.php'`
-* `$this_plugin_dir . '/functions.php`
+
+---
+
+Contributing
+---
+
+Please do not submit any Pull Requests here. They will be closed.
+
+Please submit your PR here instead: https://github.com/boxuk/wp-packages
+
+This repository is what we call a "subtree split": a read-only subset of that main repository.
+We're looking forward to your PR there!
