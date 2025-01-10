@@ -46,12 +46,12 @@ class Test_WordPress_Email_Tld_Checker extends TestCase {
 	 * @return array
 	 */
 	public function getTlds(): array {
-		return array(
-			'.com'             => array( '.com', true ),
-			'.co'              => array( '.co', true ),
-			'.co.uk'           => array( '.co.uk', true ),
-			'.co.u'            => array( '.co.u', false ),
-			'.wofjoeijfoerijf' => array( '.wofjoeijfoerijf', false ),
-		);
+		return [
+			'.com'             => [ '.com', true ],
+			'.co'              => [ '.co', true ],
+			'.co.uk'           => [ '.co.uk', true ],
+			'.co.u'            => [ '.co.u', false ],
+			'.wofjoeijfoerijf' => [ '.wofjoeijfoerijf', false ],
+		];
 	}
 }
